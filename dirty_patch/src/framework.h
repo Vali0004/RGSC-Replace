@@ -1,0 +1,72 @@
+#pragma once
+// Windows Includes (SDKs)
+#include <winsdkver.h>
+#include <sdkddkver.h>
+#include <windows.h>
+#include <winternl.h>
+#include <d3d11.h>
+#include <dxgi.h>
+#include <Psapi.h>
+#include <tlhelp32.h>
+#include <cassert>
+#include <cinttypes>
+#include <cstdarg>
+#include <cstddef>
+#include <cstdint>
+#include <cstdio>
+#include <cstdlib>
+#include <ctime>
+#include <algorithm>
+#include <atomic>
+#include <chrono>
+#include <deque>
+#include <filesystem>
+#include <fstream>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <limits>
+#include <memory>
+#include <mutex>
+#include <optional>
+#include <sstream>
+#include <stack>
+#include <string>
+#include <thread>
+#include <type_traits>
+#include <map>
+#include <unordered_map>
+#include <vector>
+#include <array>
+#include <wrl/client.h>
+#include <random>
+#include <filesystem>
+#include <timeapi.h>
+#include <stdio.h>
+#include <fcntl.h>
+#include <io.h>
+#include <regex>
+// Namespace Defines
+using namespace std::chrono;
+using namespace std::chrono_literals;
+// RGSC Inteface
+#define rage_new new
+#include "rgsc/public_interface/rgsc_common.h"
+#include "rgsc/public_interface/presence_interface.h"
+#include "rgsc/public_interface/rgsc_interface.h"
+#include "rgsc/public_interface/titleid_interface.h"
+#include "rgsc/public_interface/delegate_interface.h"
+#include "rgsc/public_interface/configuration_interface.h"
+#include "rgsc/public_interface/profiles_interface.h"
+#include "rgsc/public_interface/pad_interface.h"
+#include "rgsc/public_interface/players_interface.h"
+#include "rgsc/public_interface/achievements_interface.h"
+#include "rgsc/public_interface/commerce_interface.h"
+#include "rgsc/public_interface/activation_interface.h"
+#include "rgsc/public_interface/patching_interface.h"
+#include "rgsc/public_interface/file_system_interface.h"
+#include "rgsc/public_interface/rgsc_ui_interface.h"
+#include "rgsc/public_interface/telemetry_interface.h"
+#include "rgsc/public_interface/network_interface.h"
+#include "rgsc/public_interface/cloudsave_interface.h"
+#include "rgsc/public_interface/gamerpics_interface.h"
