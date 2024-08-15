@@ -31,3 +31,4 @@
 .vs
 *.fxc
 *.cso
+!socialclub_config.txt
