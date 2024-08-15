@@ -1,6 +1,6 @@
 ## SocialClub DLL Replacement
 
-This project aims to replace the socialclub.dll within GTA5.exe.
+This project's purpose is to replace socialclub.dll within games that use it
 
 ### Why?
 I needed to replace socialclub because I was replacing many API calls with my own and wanted to recreate Socialclub's backend for various reasons. This allows me to use the DLL inside a retail build without patching the existing socialclub.dll, instead using a bridge.
