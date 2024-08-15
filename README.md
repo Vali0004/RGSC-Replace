@@ -1,9 +1,14 @@
-# SocialClub DLL Replacement
-    This was designed for replacing socialclub.dll within GTA5.exe
-# Why?
-    I needed to replace socialclub because I was replacing a lot of API calls with my own, and wanted to recreate Socialclub's backend for various reasons. This allows me to use the DLL inside a retail build without patching the existing socialclub.dll and instead using a bridge
-# Notes
-    This only works on GTA5.exe, but nothing is stopping you from doing the same for other games using Socialclub. Just simply find where the game stores it's hmodule for Socialclub, and replace it
-# How to use it?
-    Simply place socialclub_config.txt inside the root of whatever game you're replacing it with, and use some sort of injector to inject it on startup.
-    Do note it requires extremely precise timing, so you need to inject before the game window even exists. Use Xenos64 and it's "Manual launch" option.
+## SocialClub DLL Replacement
+
+This project's purpose is to replace socialclub.dll within games that use it
+
+### Why?
+I needed to replace socialclub because I was replacing many API calls with my own and wanted to recreate Socialclub's backend for various reasons. This allows me to use the DLL inside a retail build without patching the existing socialclub.dll, instead using a bridge.
+
+### Notes
+This currently only works on GTA5.exe, but the concept can be applied to other games using Socialclub. To adapt it, find where the game stores its hmodule for Socialclub and replace it accordingly.
+
+### How to Use
+1. Place `socialclub_config.txt` in the root directory of the game you're targeting.
+2. Use an injector to inject the DLL on game startup.
+   * Note: Precise timing is crucial. Inject before the game window appears. Xenos64's "Manual launch" option is recommended.
