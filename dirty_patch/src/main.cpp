@@ -85,10 +85,10 @@ FARPROC GetProcAddressHk(HMODULE hModule, LPCSTR lpProcName)
 
 void do_fancy_shutdown(u8 time)
 {
-	std::cout << "Unloading in " << time << " seconds..." << std::endl;
+	std::cout << "Unloading in " << static_cast<int>(time) << " seconds..." << std::endl;
 	for (u8 i{ time }; i; --i)
 	{
-		std::cout << "Unloading in " << i << " seconds..." << std::endl;
+		std::cout << "Unloading in " << static_cast<int>(i) << " seconds..." << std::endl;
 		std::this_thread::sleep_for(1s);
 	}
 }
